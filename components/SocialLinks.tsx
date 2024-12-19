@@ -17,6 +17,7 @@ function SocialLinks() {
             href={socialLink.href}
             target="_blank"
             className="social-links-item"
+            aria-label={socialLink.title}
           >
             <span>
               <socialLink.icon />

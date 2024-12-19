@@ -344,8 +344,8 @@ export const contactData = {
       tr: "İletişime Geçin",
     },
     description: {
-      en: "",
-      tr: "",
+      en: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam quibusdam optio ipsam fugiat illo officiis eaque aliquam nisi ad minus officia, voluptas sed cumque! Explicabo odio a sequi reprehenderit?",
+      tr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam quibusdam optio ipsam fugiat illo officiis eaque aliquam nisi ad minus officia, voluptas sed cumque! Explicabo odio a sequi reprehenderit?",
     },
     name: {
       en: "Your Name",
@@ -386,8 +386,8 @@ export const contactData = {
           tr: "Mesaj en az 20 karakter icermelidir",
         },
         invalidMessageLengthLong: {
-          en: "Message should not exceed 500 characters",
-          tr: "Mesaj 500 karakteri geçmemelidir",
+          en: "Message should not exceed 200 characters",
+          tr: "Mesaj 200 karakteri geçmemelidir",
         },
       },
     },
