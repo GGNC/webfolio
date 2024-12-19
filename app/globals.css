@@ -267,8 +267,31 @@
   .project-carouse-button {
     @apply rounded-md bg-transparent border border-lightSky/20 hover:!bg-hoverColor/20  hover:!text-white  hover:border-hoverColor p-5 hoverEffect;
   }
+  .contact {
+    @apply py-6 md:py-12 flex flex-col md:flex-row gap-6 md:gap-14;
+  }
+  .contact-form-container {
+    @apply w-full md:w-2/3;
+  }
+  .contact-form {
+    @apply w-full flex flex-col gap-4;
+  }
+  .contact-form-input-container {
+    @apply flex flex-col md:flex-row gap-4 items-center;
+  }
+  .contact-form-button {
+    @apply w-full text-white bg-lightSky/10 border border-lightSky/20 rounded-md py-5 hover:!bg-lightSky/10 hover:text-lightSky hover:border-lightSky hoverEffect;
+  }
+  .contact-details-container {
+    @apply w-full md:w-1/3 flex flex-col justify-center gap-4 md:gap-8;
+  }
+  .contact-detail-container {
+    @apply flex items-center space-x-4;
+  }
+  .contact-detail-icon {
+    @apply bg-lightSky/5 p-4 rounded-md;
+  }
+  .contact-detail-title {
+    @apply text-white/60 text-sm font-semibold;
+  }
 }
-
-/* Container {
-  @apply max-w-screen-xl mx-auto p-4;
-} */

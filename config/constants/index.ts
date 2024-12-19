@@ -5,6 +5,9 @@ import {
   User,
   Github,
   Linkedin,
+  Phone,
+  Mail,
+  MapPinCheck,
 } from "lucide-react";
 import ReachSpanImg from "../../public/images/project-images/reachspan.png";
 import TaskPadImg from "../../public/images/project-images/taskpad.png";
@@ -67,7 +70,6 @@ export const headerData = {
     },
   ],
 };
-
 export const homeData = {
   jobTitle: "Front-End Developer",
   title: {
@@ -156,7 +158,6 @@ export const projectData = {
     },
   ],
 };
-
 export const resumeData = {
   tabMenuData: [
     {
@@ -335,4 +336,86 @@ export const resumeData = {
       },
     },
   },
+};
+export const contactData = {
+  formData: {
+    title: {
+      en: "Get in Touch",
+      tr: "İletişime Geçin",
+    },
+    description: {
+      en: "",
+      tr: "",
+    },
+    name: {
+      en: "Your Name",
+      tr: "Adınız",
+    },
+    email: {
+      en: "Your E-mail",
+      tr: "E-postanız",
+    },
+    message: {
+      en: "Your Message",
+      tr: "Mesajınız",
+    },
+    button: {
+      en: "Send",
+      tr: "Gönder",
+    },
+    formMessages: {
+      name: {
+        invalidNameLengthShort: {
+          en: "Name should not be empty",
+          tr: "Ad boş bırakılamaz",
+        },
+        invalidNameLengthLong: {
+          en: "Name should not exceed 15 characters",
+          tr: "Ad 15 karakteri geçmemelidir",
+        },
+      },
+      email: {
+        invalidEmail: {
+          en: "Invalid e-mail",
+          tr: "Geçersiz e-posta",
+        },
+      },
+      message: {
+        invalidMessageLengthShort: {
+          en: "Message should be at least 20 characters",
+          tr: "Mesaj en az 20 karakter icermelidir",
+        },
+        invalidMessageLengthLong: {
+          en: "Message should not exceed 500 characters",
+          tr: "Mesaj 500 karakteri geçmemelidir",
+        },
+      },
+    },
+  },
+  detailsData: [
+    {
+      title: {
+        en: "Phone",
+        tr: "Telefon",
+      },
+      description: "(+90) 506 059 0068",
+      icon: Phone,
+    },
+    {
+      title: {
+        en: "E-mail",
+        tr: "E-posta",
+      },
+      description: "g@mail.com",
+      icon: Mail,
+    },
+    {
+      title: {
+        en: "Address",
+        tr: "Adres",
+      },
+      description: "Istanbul, Turkey",
+      icon: MapPinCheck,
+    },
+  ],
 };
