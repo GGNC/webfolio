@@ -19,7 +19,7 @@ export const ContactFormSchema = z.object({
       message:
         contactData.formData.formMessages.message.invalidMessageLengthShort.en,
     })
-    .max(100, {
+    .max(200, {
       message:
         contactData.formData.formMessages.message.invalidMessageLengthLong.en,
     }),

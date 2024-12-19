@@ -20,11 +20,11 @@ function Stairs() {
           exit="exit"
           variants={stairAnimation}
           transition={{
-            duration: 0.25,
+            duration: 0.2,
             delay: reverseIndex(index) * 0.1,
             ease: "easeInOut",
           }}
-          className="w-full h-full bg-white relative"
+          className="w-full h-full bg-slate-200 relative"
         />
       ))}
     </>

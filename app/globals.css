@@ -189,6 +189,9 @@
   .home-downloadcv-button {
     @apply h-10 bg-transparent rounded-full border border-lightSky/50 text-lightSky hover:!bg-hoverColor hover:text-black hoverEffect;
   }
+  .home-downloadcv-button-link {
+    @apply flex gap-2 items-center justify-center px-5 py-2.5;
+  }
   .stat-container {
     @apply flex flex-col items-center md:flex-row gap-2.5 md:gap-5;
   }
@@ -278,6 +281,9 @@
   }
   .contact-form-input-container {
     @apply flex flex-col md:flex-row gap-4 items-center;
+  }
+  .contact-form-input {
+    @apply w-full md:w-1/2;
   }
   .contact-form-button {
     @apply w-full text-white bg-lightSky/10 border border-lightSky/20 rounded-md py-5 hover:!bg-lightSky/10 hover:text-lightSky hover:border-lightSky hoverEffect;
