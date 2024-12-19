@@ -1,4 +1,3 @@
-import HomeDescription from "@/components/HomeDescription";
 import Photo from "@/components/Photo";
 import SocialLinks from "@/components/SocialLinks";
 import Statistics from "@/components/Statistics";
@@ -17,10 +16,8 @@ function Home() {
             <h2 className="home-greeting">{homeData.title.en}</h2>
             <h1 className="home-name">{homeData.name}</h1>
           </div>
-          <div className="w-full min-h-[170px] md:min-h-[140px] relative">
-            <div className="absolute top-0 left-0 w-full h-full">
-              <HomeDescription />
-            </div>
+          <div className="w-full min-h-[170px] md:min-h-[140px]">
+            <p>{homeData.description.en}</p>
           </div>
           <Button className="home-downloadcv-button">
             <Link
