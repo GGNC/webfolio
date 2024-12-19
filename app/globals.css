@@ -201,6 +201,33 @@
   .photo-image {
     @apply object-contain w-full h-full;
   }
+  .resume {
+    @apply max-w-screen-xl mx-auto p-4  flex flex-col justify-center py-10;
+  }
+  .resume-tabs {
+    @apply w-full flex flex-col md:flex-row gap-6 md:gap-10;
+  }
+  .resume-tabslist {
+    @apply flex md:flex-col h-full bg-transparent md:w-64 gap-4;
+  }
+  .resume-tab-item {
+    @apply bg-white/10 w-full py-2.5 text-white data-[state=active]:!bg-hoverColor hover:!bg-lightSky/50 text-xs sm:text-sm;
+  }
+  .resume-tab-item-icon {
+    @apply w-4 h-4 md:w-5 md:h-5;
+  }
+  .resume-tab-item-content {
+    @apply flex items-center gap-2.5 md:w-[50%] md:gap-3;
+  }
+  .resume-tab-item-wrapper {
+    @apply border rounded-lg border-lightSky/20 p-6;
+  }
+  .resume-tab-item-content-wrapper {
+    @apply flex items-start justify-between mb-4;
+  }
+  .resume-tab-item-title {
+    @apply text-2xl font-bold mb-6 text-lightSky;
+  }
 }
 
 /* Container {

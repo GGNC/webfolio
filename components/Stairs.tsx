@@ -20,7 +20,7 @@ function Stairs() {
           exit="exit"
           variants={stairAnimation}
           transition={{
-            duration: 0.4,
+            duration: 0.25,
             delay: reverseIndex(index) * 0.1,
             ease: "easeInOut",
           }}

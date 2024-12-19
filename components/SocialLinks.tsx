@@ -1,4 +1,3 @@
-import { Github, Linkedin } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import {
@@ -7,21 +6,10 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "./ui/tooltip";
+import { headerData } from "@/config/constants";
 
-const socialLinkData = [
-  {
-    title: "GitHub",
-    href: "https://github.com/GGNC",
-    icon: <Github />,
-  },
-  {
-    title: "LinkedIn",
-    href: "https://www.linkedin.com/in/ggnc",
-    icon: <Linkedin />,
-  },
-];
 function SocialLinks() {
-  const socialLinkElements = socialLinkData.map((socialLink) => {
+  const socialLinkElements = headerData.socialLinkData.map((socialLink) => {
     return (
       <Tooltip key={socialLink.title}>
         <TooltipTrigger asChild>
@@ -30,7 +18,9 @@ function SocialLinks() {
             target="_blank"
             className="social-links-item"
           >
-            <span>{socialLink.icon}</span>
+            <span>
+              <socialLink.icon />
+            </span>
           </Link>
         </TooltipTrigger>
         <TooltipContent className="social-link_tooltip">
