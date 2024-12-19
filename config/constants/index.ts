@@ -6,6 +6,8 @@ import {
   Github,
   Linkedin,
 } from "lucide-react";
+import ReachSpanImg from "../../public/images/project-images/reachspan.png";
+import TaskPadImg from "../../public/images/project-images/taskpad.png";
 
 export const headerData = {
   logoData: {
@@ -104,10 +106,52 @@ export const homeData = {
       },
     },
     {
-      num: 999,
+      num: 99,
       title: {
-        en: "Coffee Cups",
+        en: "Cup of Coffee",
         tr: "Bardak Kahve",
+      },
+    },
+  ],
+};
+export const projectData = {
+  projects: [
+    {
+      id: "01",
+      title: "ReachSpan",
+      category: "Front-End Project",
+      description: {
+        en: "Reachspan is a one page TTRPG where you play as a crew of skilled spacefarers exploring the fractured galaxy. Trade, scavenge, and battle your way through uncharted sectors, shaping the world as you go. With flexible rules and a simple dice system, the possibilities are endless. Are you ready to embark on this interstellar adventure?",
+        tr: "Reachspan, parçalanmış galaksiyi keşfeden yetenekli uzay yolcuları ekibi olarak oynadığınız tek sayfalık bir TTRPG'dir. Yolunuzu çizerek, keşfederek ve savaşarak keşfedin. Esnek kurallar ve basit bir zar sistemi ile, olanaklar sonsuzdur. Bu yıldızlararası maceraya hazır mısınız?",
+      },
+      stack: ["JavaScript", "HTML", "CSS"],
+      liveUrl: "https://reachspan.vercel.app/",
+      githubUrl: "https://github.com/GGNC/ReachSpan",
+      image: {
+        src: ReachSpanImg,
+        alt: {
+          en: "ReachSpan Project Image",
+          tr: "ReachSpan Proje Görseli",
+        },
+      },
+    },
+    {
+      id: "02",
+      title: "TaskPad",
+      category: "Front-End Project",
+      description: {
+        en: "TaskPad is a lightweight task management application built with React, TypeScript, Vite, and Tailwind CSS. It emphasizes modern development practices, including fast builds, type safety, and utility-first styling. Designed for simplicity, it offers an intuitive interface for efficient task organization.",
+        tr: "TaskPad, React, TypeScript, Vite ve Tailwind CSS ile oluşturulan basit bir görev yönetimi uygulamasıdır. Hızlı derlemeler, tip güvenliği ve yardımcı program odaklı stil gibi modern geliştirme uygulamalarına önem verir. Basitlik için tasarlanmış olup, verimli görev organizasyonu için sezgisel bir arayüz sunar.",
+      },
+      stack: ["React", "TypeScript", "HTML", "Tailwind CSS"],
+      liveUrl: "https://github.com/GGNC/taskpad",
+      githubUrl: "https://github.com/GGNC/taskpad",
+      image: {
+        src: TaskPadImg,
+        alt: {
+          en: "TaskPad Project Image",
+          tr: "TaskPad Proje Görseli",
+        },
       },
     },
   ],

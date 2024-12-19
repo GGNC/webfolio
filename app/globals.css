@@ -82,6 +82,12 @@
   .hoverEffect {
     @apply transition-all duration-300 cursor-pointer ease-in-out;
   }
+  .text-outline {
+    -webkit-text-stroke: 1px #fff;
+  }
+  .text-outline-hover {
+    -webkit-text-stroke: 1px #00ff99;
+  }
 }
 @font-face {
   font-family: "JetBrains";
@@ -227,6 +233,39 @@
   }
   .resume-tab-item-title {
     @apply text-2xl font-bold mb-6 text-lightSky;
+  }
+  .project-container {
+    @apply flex flex-col md:flex-row md:items-center md:space-x-6;
+  }
+  .project-info-container {
+    @apply w-full md:w-1/2 order-2 md:order-1 mb-8 md:mb-0;
+  }
+  .project-info-id {
+    @apply text-4xl md:text-6xl leading-none font-bold text-transparent text-outline;
+  }
+  .project-info-category {
+    @apply text-xl md:text-3xl font-bold leading-none text-white hoverEffect;
+  }
+  .project-info-description {
+    @apply text-white/60 text-sm md:text-base leading-6 md:leading-normal;
+  }
+  .project-info-stack-container {
+    @apply flex flex-wrap md:flex-nowrap gap-2 md:gap-4 items-center;
+  }
+  .project-info-stack {
+    @apply text-lightSky/80 text-xs md:text-base;
+  }
+  .project-image-container {
+    @apply w-full md:w-1/2 order-1 md:order-2;
+  }
+  .project-image {
+    @apply relative h-64 md:h-96 bg-gray-700 rounded-lg overflow-hidden;
+  }
+  .project-carouse-button-container {
+    @apply absolute right-10 -bottom-8;
+  }
+  .project-carouse-button {
+    @apply rounded-md bg-transparent border border-lightSky/20 hover:!bg-hoverColor/20  hover:!text-white  hover:border-hoverColor p-5 hoverEffect;
   }
 }
 
