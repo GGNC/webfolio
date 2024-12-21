@@ -15,8 +15,11 @@ import {
 import { ContactFormSchema } from "@/config/schemas";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
+import SuccessMessage from "../SuccessMessage";
 
 function ContactForm() {
+  const [success, setSuccess] = useState(false);
   const form = useForm<z.infer<typeof ContactFormSchema>>({
     resolver: zodResolver(ContactFormSchema),
     defaultValues: {
@@ -25,8 +28,15 @@ function ContactForm() {
       message: "",
     },
   });
-  function onSubmit(values: z.infer<typeof ContactFormSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof ContactFormSchema>) {
+    const response = await fetch("/api/emails", {
+      method: "POST",
+      body: JSON.stringify(values),
+    });
+    if (response.ok) {
+      setSuccess(true);
+      form.reset();
+    }
   }
   return (
     <div className="space-y-4">
@@ -34,65 +44,69 @@ function ContactForm() {
         {contactData.formData.title.en}
       </Title>
       <p>{contactData.formData.description.en}</p>
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="contact-form">
-          <div className="contact-form-input-container">
+      {success ? (
+        <SuccessMessage />
+      ) : (
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="contact-form">
+            <div className="contact-form-input-container">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem className="contact-form-input">
+                    <FormControl>
+                      <Input
+                        placeholder={contactData.formData.name.en}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem className="contact-form-input">
+                    <FormControl>
+                      <Input
+                        placeholder={contactData.formData.email.en}
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
             <FormField
               control={form.control}
-              name="name"
+              name="message"
               render={({ field }) => (
-                <FormItem className="contact-form-input">
+                <FormItem>
                   <FormControl>
-                    <Input
-                      placeholder={contactData.formData.name.en}
+                    <Textarea
+                      placeholder={contactData.formData.message.en}
                       {...field}
+                      rows={5}
                     />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <FormField
-              control={form.control}
-              name="email"
-              render={({ field }) => (
-                <FormItem className="contact-form-input">
-                  <FormControl>
-                    <Input
-                      placeholder={contactData.formData.email.en}
-                      {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-          </div>
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <Textarea
-                    placeholder={contactData.formData.message.en}
-                    {...field}
-                    rows={5}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-          <Button
-            disabled={form.formState.isSubmitting}
-            className="contact-form-button"
-            type="submit"
-          >
-            {contactData.formData.button.en}
-          </Button>
-        </form>
-      </Form>
+            <Button
+              disabled={form.formState.isSubmitting}
+              className="contact-form-button"
+              type="submit"
+            >
+              {contactData.formData.button.en}
+            </Button>
+          </form>
+        </Form>
+      )}
     </div>
   );
 }
