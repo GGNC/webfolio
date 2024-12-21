@@ -391,6 +391,16 @@ export const contactData = {
         },
       },
     },
+    thanksMessage: {
+      thankYou: {
+        en: "Thank You!",
+        tr: "Teşekkürler!",
+      },
+      getBack: {
+        en: "I will get back to you as soon as possible.",
+        tr: "En kısa sürede size geri döneceğim.",
+      },
+    },
   },
   detailsData: [
     {
