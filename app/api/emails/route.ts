@@ -5,7 +5,7 @@ export async function POST(request: Request) {
   const { name, email, message } = await request.json();
   try {
     const { data, error } = await resend.emails.send({
-      from: email,
+      from: "onboarding@resend.dev",
       to: "gokhangenc113@gmail.com",
       subject: "This e-mail was sent from Webfolio",
       react: ContactEmail({ name, email, message }),
