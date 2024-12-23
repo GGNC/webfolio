@@ -28,7 +28,9 @@ function AboutResumeContent({ value }: AboutResumeContentProps) {
           </p>
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold mb-2">Interests</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                {resumeData.tabContentData.about.interests.title.en}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {resumeData.tabContentData.about.interests.en.map(
                   (interest, index) => (
@@ -40,7 +42,23 @@ function AboutResumeContent({ value }: AboutResumeContentProps) {
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-semibold mb-2">Languages</h3>
+              <h3 className="text-lg font-semibold mb-2">
+                {resumeData.tabContentData.about.volunteer.title.en}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {resumeData.tabContentData.about.volunteer.en.map(
+                  (volunteer, index) => (
+                    <Badge key={index} variant="secondary" className="mb-2">
+                      {volunteer}
+                    </Badge>
+                  )
+                )}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-semibold mb-2">
+                {resumeData.tabContentData.about.languages.title.en}
+              </h3>
               <div className="flex flex-wrap gap-2">
                 {resumeData.tabContentData.about.languages.en.map(
                   (interest, index) => (
