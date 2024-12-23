@@ -71,14 +71,14 @@ export const headerData = {
   ],
 };
 export const homeData = {
-  jobTitle: "Front-End Developer",
+  jobTitle: "Full-Stack Developer",
   title: {
     en: "Hello I'm",
     tr: "Merhaba Ben",
   },
   name: "Gökhan GENÇ",
   description: {
-    en: "I'm a Front-End Developer. I have been developing web applications for 2 years. I am a person who loves to learn and develop myself.",
+    en: "I’m a Full-Stack Developer with a deep passion for creating innovative and efficient digital solutions. With experience in both front-end and back-end technologies, I specialize in building dynamic, responsive web applications that are both functional and visually engaging.",
     tr: "Ben bir Front-End Developer'ım. 2 yıldır web uygulamaları geliştiriyorum. Öğrenmeyi ve kendimi geliştirmeyi seven biriyim.",
   },
   downloadCV: {
@@ -94,7 +94,7 @@ export const homeData = {
       },
     },
     {
-      num: 5,
+      num: 10,
       title: {
         en: "Projects Completed",
         tr: "Proje Tamamlandı",
@@ -236,8 +236,8 @@ export const resumeData = {
       items: [
         {
           degree: {
-            en: "Computer Engineering",
-            tr: "Bilgisayar Mühendisliği",
+            en: "Bachelor of Engineering - Computer Engineering",
+            tr: "Mühendislik Fakültesi - Bilgisayar Mühendisliği",
           },
           institution: {
             en: "Cukurova University",
@@ -245,10 +245,10 @@ export const resumeData = {
           },
           period: "2018 - 2023",
           description: {
-            en: "I studied computer engineering at Cukurova University. I graduated in 2023.",
-            tr: "Çukurova Üniversitesi'nde bilgisayar mühendisliği okudum. 2023 yılında mezun oldum.",
+            en: "",
+            tr: "",
           },
-          achiments: [],
+          achiments: ["GPA : 2.94 / 4", "Campus Ambassador"],
         },
         {
           degree: {
@@ -259,10 +259,10 @@ export const resumeData = {
             en: "Bahcesehir Ataturk Anadolu High School",
             tr: "Bahçeşehir Atatürk Anadolu Lisesi",
           },
-          period: "2014 - 2028",
+          period: "2014 - 2018",
           description: {
-            en: "I studied at Bahcesehir Ataturk Anadolu High School. I graduated in 2018.",
-            tr: "Liseyi Bahçeşehir Atatürk Anadolu Lisesi'nde okudum. 2018 yılında mezun oldum.",
+            en: "",
+            tr: "",
           },
           achiments: [],
         },
@@ -280,8 +280,8 @@ export const resumeData = {
             tr: "Front-End Geliştirme",
           },
           description: {
-            en: "I have been developing web applications for 2 years. I am experienced in React, TypeScript, HTML, CSS, and Tailwind CSS.",
-            tr: "2 yıldır web uygulamaları geliştiriyorum. React, TypeScript, HTML, CSS ve Tailwind CSS konularında deneyimliyim.",
+            en: "",
+            tr: "",
           },
           skills: [
             "React",
@@ -299,8 +299,8 @@ export const resumeData = {
             tr: "Back-End Geliştirme",
           },
           description: {
-            en: "I have experience in developing back-end applications using Node.js and MongoDB.",
-            tr: "Node.js ve MongoDB kullanarak back-end uygulamaları geliştirme konusunda deneyimim var.",
+            en: "",
+            tr: "",
           },
           skills: ["Node.js", "MongoDB"],
         },
@@ -310,8 +310,8 @@ export const resumeData = {
             tr: "Araçlar & Teknolojiler",
           },
           description: {
-            en: "I am experienced in using Git, GitHub, and Visual Studio Code.",
-            tr: "Git, GitHub ve Visual Studio Code kullanımında deneyimliyim.",
+            en: "",
+            tr: "",
           },
           skills: ["Git", "GitHub", "Unity", "Visual Studio Code"],
         },
@@ -323,15 +323,31 @@ export const resumeData = {
         tr: "Hakkımda",
       },
       bio: {
-        en: "I'm a Front-End Developer. I have been developing web applications for 2 years. I am a person who loves to learn and develop myself.",
-        tr: "Ben bir Front-End Developer'ım. 2 yıldır web uygulamaları geliştiriyorum. Öğrenmeyi ve kendimi geliştirmeyi seven biriyim.",
+        en: "I’m a Full-Stack Developer who loves taking on challenges and finding innovative solutions. Whether it’s a coding problem or a new opportunity, I’m always eager to learn and grow. When I’m not working, you’ll find me playing video games, going for walks, or watching auto racing. I also volunteer for TOSFED, contributing to the racing community, and I’m fascinated by the technical side of the sport—the engineering and strategy behind every race. I’m driven by curiosity and enjoy helping others, both in my personal life and in my work.",
+        tr: "Yenilikçi çözümler bulmayı seven bir Full-Stack Developer'ım. Bir kodlama sorunu veya yeni bir fırsat olsun, her zaman öğrenmeye ve büyümeye hevesliyim. Çalışmadığımda, beni video oyunları oynarken, yürüyüşe çıkarken veya otomobil yarışı izlerken bulacaksınız. Ayrıca TOSFED için gönüllü",
       },
       interests: {
-        en: ["Basketball", "Video Games", "Car Races"],
-        tr: ["Basketbol Oynamak", "Video Oyunları", "Araba Yarışları"],
+        title: {
+          en: "Interests",
+          tr: "İlgi Alanları",
+        },
+        en: ["Basketball", "Video Games", "Auto Racing"],
+        tr: ["Basketbol Oynamak", "Video Oyunları", "Auto Racing"],
+      },
+      volunteer: {
+        title: {
+          en: "Volunteer Works",
+          tr: "Gönüllü Çalışmalar",
+        },
+        en: ["Class-C Volunteer Supervisor/Referee - TOSFED"],
+        tr: ["Sınıf-C Gönüllü Gözetmen/Hakem - TOSFED"],
       },
       languages: {
-        en: ["Turkish (Native)", "English(Advanced)"],
+        title: {
+          en: "Languages",
+          tr: "Diller",
+        },
+        en: ["Turkish (Native)", "English(Highly proficient)"],
         tr: ["Türkçe (Ana Dil)", "İngilizce (İleri)"],
       },
     },
@@ -344,8 +360,8 @@ export const contactData = {
       tr: "İletişime Geçin",
     },
     description: {
-      en: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam quibusdam optio ipsam fugiat illo officiis eaque aliquam nisi ad minus officia, voluptas sed cumque! Explicabo odio a sequi reprehenderit?",
-      tr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat veniam quibusdam optio ipsam fugiat illo officiis eaque aliquam nisi ad minus officia, voluptas sed cumque! Explicabo odio a sequi reprehenderit?",
+      en: "Feel free to reach out to me for any inquiries, collaborations, or just to say hello. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.",
+      tr: "Herhangi bir soru, iş birliği veya sadece merhaba demek için benimle iletişime geçmekten çekinmeyin. Yeni projeler, yaratıcı fikirler veya vizyonunuzun bir parçası olma fırsatlarını tartışmaya her zaman açığım.",
     },
     name: {
       en: "Your Name",
@@ -383,7 +399,7 @@ export const contactData = {
       message: {
         invalidMessageLengthShort: {
           en: "Message should be at least 20 characters",
-          tr: "Mesaj en az 20 karakter icermelidir",
+          tr: "Mesaj en az 20 karakter içermelidir",
         },
         invalidMessageLengthLong: {
           en: "Message should not exceed 200 characters",
@@ -416,7 +432,7 @@ export const contactData = {
         en: "E-mail",
         tr: "E-posta",
       },
-      description: "g@mail.com",
+      description: "gokhangenc113@gmail.com",
       icon: Mail,
     },
     {
