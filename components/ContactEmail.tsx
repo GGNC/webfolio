@@ -19,7 +19,7 @@ function ContactEmail({ name, email, message }: ContactEmailProps) {
     >
       <h1
         style={{
-          color: "black",
+          color: "#e2e8f0",
           fontSize: "48px",
           fontWeight: "extrabold",
           textAlign: "center",
@@ -32,7 +32,7 @@ function ContactEmail({ name, email, message }: ContactEmailProps) {
       <h2
         style={{
           width: "100%",
-          color: "purple",
+          color: "#22c55e",
           fontSize: "24px",
           fontWeight: "bold",
           textAlign: "center",
@@ -42,7 +42,14 @@ function ContactEmail({ name, email, message }: ContactEmailProps) {
       >
         {email}
       </h2>
-      <p style={{ width: "100%", padding: "0", marginTop: "5px" }}>
+      <p
+        style={{
+          width: "100%",
+          padding: "0",
+          marginTop: "5px",
+          color: "#f8fafc",
+        }}
+      >
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{message}
       </p>
     </div>
