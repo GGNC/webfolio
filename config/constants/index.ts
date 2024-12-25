@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import ReachSpanImg from "../../public/images/project-images/reachspan.png";
 import TaskPadImg from "../../public/images/project-images/taskpad.png";
+import StoreItImage from "../../public/images/project-images/store-it.png";
 
 export const headerData = {
   logoData: {
@@ -145,7 +146,7 @@ export const projectData = {
         en: "TaskPad is a lightweight task management application built with React, TypeScript, Vite, and Tailwind CSS. It emphasizes modern development practices, including fast builds, type safety, and utility-first styling. Designed for simplicity, it offers an intuitive interface for efficient task organization.",
         tr: "TaskPad, React, TypeScript, Vite ve Tailwind CSS ile oluşturulan basit bir görev yönetimi uygulamasıdır. Hızlı derlemeler, tip güvenliği ve yardımcı program odaklı stil gibi modern geliştirme uygulamalarına önem verir. Basitlik için tasarlanmış olup, verimli görev organizasyonu için sezgisel bir arayüz sunar.",
       },
-      stack: ["React", "TypeScript", "HTML", "Tailwind CSS"],
+      stack: ["React", "TypeScript", "TanStack Query", "Tailwind CSS"],
       liveUrl: "https://github.com/GGNC/taskpad",
       githubUrl: "https://github.com/GGNC/taskpad",
       image: {
@@ -153,6 +154,25 @@ export const projectData = {
         alt: {
           en: "TaskPad Project Image",
           tr: "TaskPad Proje Görseli",
+        },
+      },
+    },
+    {
+      id: "03",
+      title: "Store-It",
+      category: "Full-Stack Project",
+      description: {
+        en: "A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.",
+        tr: "Kullanıcıların dosyaları kolayca yüklemesine, düzenlemesine ve paylaşmasına olanak tanıyan bir depolama yönetimi ve dosya paylaşım platformu. En son Next.js 15 ve Appwrite Node SDK ile oluşturulmuş olup, sorunsuz dosya yönetimi için gelişmiş özellikler kullanır.",
+      },
+      stack: ["React", "Next.js", "TypeScript", "Appwrite"],
+      liveUrl: "https://github.com/GGNC/store-it",
+      githubUrl: "https://github.com/GGNC/store-it",
+      image: {
+        src: StoreItImage,
+        alt: {
+          en: "Store-It Project Image",
+          tr: "Store-It Proje Görseli",
         },
       },
     },
