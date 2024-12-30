@@ -268,7 +268,7 @@ export const resumeData = {
             en: "",
             tr: "",
           },
-          achiments: ["GPA : 2.94 / 4", "Campus Ambassador"],
+          achiments: ["Campus Ambassador / GameFactory", "Presenter / CENGA"],
         },
         {
           degree: {
