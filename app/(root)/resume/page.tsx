@@ -20,7 +20,7 @@ function ResumePage() {
               >
                 <div className="resume-tab-item-content">
                   <tab.icon className="resume-tab-item-icon" />
-                  {tab.title.en}
+                  <span className="hidden phone:block">{tab.title.en}</span>
                 </div>
               </TabsTrigger>
             ))}

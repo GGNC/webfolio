@@ -9,7 +9,7 @@ function Statistics() {
         <CountUp
           end={stat.num}
           duration={5}
-          delay={0.75}
+          delay={1}
           suffix="+"
           className="stat-item-number"
         />
