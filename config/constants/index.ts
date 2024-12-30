@@ -72,14 +72,14 @@ export const headerData = {
   ],
 };
 export const homeData = {
-  jobTitle: "Full-Stack Developer",
+  jobTitle: "Software Engineer",
   title: {
     en: "Hello I'm",
     tr: "Merhaba Ben",
   },
   name: "Gökhan GENÇ",
   description: {
-    en: "I’m a Full-Stack Developer with a deep passion for creating innovative and efficient digital solutions. With experience in both front-end and back-end technologies, I specialize in building dynamic, responsive web applications that are both functional and visually engaging.",
+    en: "I’m a Software Engineer with a deep passion for creating innovative and efficient digital solutions. With experience in both front-end and back-end technologies, I specialize in building dynamic, responsive web applications that are both functional and visually engaging.",
     tr: "Ben bir Front-End Developer'ım. 2 yıldır web uygulamaları geliştiriyorum. Öğrenmeyi ve kendimi geliştirmeyi seven biriyim.",
   },
   downloadCV: {
