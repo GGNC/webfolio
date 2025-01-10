@@ -12,6 +12,7 @@ import {
 import ReachSpanImg from "../../public/images/project-images/reachspan.png";
 import TaskPadImg from "../../public/images/project-images/taskpad.png";
 import StoreItImage from "../../public/images/project-images/store-it.png";
+import CarePulseImage from "../../public/images/project-images/carepulse.png";
 
 export const headerData = {
   logoData: {
@@ -173,6 +174,25 @@ export const projectData = {
         alt: {
           en: "Store-It Project Image",
           tr: "Store-It Proje Görseli",
+        },
+      },
+    },
+    {
+      id: "04",
+      title: "CarePulse",
+      category: "Full-Stack Project",
+      description: {
+        en: "A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.",
+        tr: "Hastaların doktorlarla kolayca kayıt olmalarını, randevu almalarını ve yönetmelerini sağlayan bir sağlık hasta yönetim uygulaması. Randevuları planlama, onaylama ve iptal etme gibi idari araçlar ve SMS bildirimleri ile birlikte gelir, hepsi Next.js kullanılarak oluşturulmuştur.",
+      },
+      stack: ["Next.js", "TypeScript", "Appwrite", "Twilio"],
+      liveUrl: "https://github.com/GGNC/carepulse",
+      githubUrl: "https://github.com/GGNC/carepulse",
+      image: {
+        src: CarePulseImage,
+        alt: {
+          en: "CarePulse Project Image",
+          tr: "CarePulse Proje Görseli",
         },
       },
     },

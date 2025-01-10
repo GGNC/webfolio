@@ -1,13 +1,4 @@
-"use client";
-import React, { useState } from "react";
 import PageLayout from "@/components/PageLayout";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { projectData } from "@/config/constants";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
@@ -23,7 +14,6 @@ import { ArrowUpRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 function ProjectPage() {
-  const [, setCurrentIndex] = useState(0);
   const projects = projectData.projects.map((project) => {
     const projectStacks = project.stack.map((stack, index) => {
       return (
@@ -33,7 +23,7 @@ function ProjectPage() {
       );
     });
     return (
-      <CarouselItem key={project.id}>
+      <div key={project.id}>
         <Card className="bg-bodyColor border-lightSky/20">
           <CardContent className="p-6">
             <div className="project-container group">
@@ -105,29 +95,16 @@ function ProjectPage() {
             </div>
           </CardContent>
         </Card>
-      </CarouselItem>
+      </div>
     );
   });
-  const handleSlideChange = (index: number) => setCurrentIndex(index);
+
   return (
     <div className="py-6 md:py-12">
       <PageLayout>
-        <Carousel
-          opts={{ align: "start", loop: true }}
-          className="w-full"
-          onSelect={() => {
-            const index = 0;
-            if (typeof index === "number") {
-              handleSlideChange(index);
-            }
-          }}
-        >
-          <CarouselContent>{projects}</CarouselContent>
-          <div className="project-carouse-button-container">
-            <CarouselPrevious className="project-carouse-button" />
-            <CarouselNext className="project-carouse-button" />
-          </div>
-        </Carousel>
+        <ul className="w-full flex flex-col justify-center items-center gap-8">
+          {projects}
+        </ul>
       </PageLayout>
     </div>
   );
