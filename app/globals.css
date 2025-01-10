@@ -244,19 +244,19 @@
     @apply w-full md:w-1/2 order-2 md:order-1 mb-8 md:mb-0;
   }
   .project-info-id {
-    @apply text-4xl md:text-6xl leading-none font-bold text-transparent text-outline;
+    @apply text-4xl md:text-6xl leading-none font-bold text-transparent text-outline cursor-default;
   }
   .project-info-category {
-    @apply text-xl md:text-3xl font-bold leading-none text-white hoverEffect;
+    @apply text-xl md:text-3xl font-bold leading-none text-white hoverEffect cursor-default;
   }
   .project-info-description {
-    @apply text-white/60 text-sm md:text-base leading-6 md:leading-normal;
+    @apply text-white/60 text-sm md:text-base leading-6 md:leading-normal cursor-default;
   }
   .project-info-stack-container {
     @apply flex flex-wrap md:flex-nowrap gap-2 md:gap-4 items-center;
   }
   .project-info-stack {
-    @apply text-lightSky/80 text-xs md:text-base;
+    @apply text-lightSky/80 text-xs md:text-base cursor-default;
   }
   .project-image-container {
     @apply w-full md:w-1/2 order-1 md:order-2;
