@@ -167,7 +167,7 @@ export const projectData = {
         tr: "Kullanıcıların dosyaları kolayca yüklemesine, düzenlemesine ve paylaşmasına olanak tanıyan bir depolama yönetimi ve dosya paylaşım platformu. En son Next.js 15 ve Appwrite Node SDK ile oluşturulmuş olup, sorunsuz dosya yönetimi için gelişmiş özellikler kullanır.",
       },
       stack: ["React", "Next.js", "TypeScript", "Appwrite"],
-      liveUrl: "https://github.com/GGNC/store-it",
+      liveUrl: "https://ggnc-store-it.vercel.app",
       githubUrl: "https://github.com/GGNC/store-it",
       image: {
         src: StoreItImage,
